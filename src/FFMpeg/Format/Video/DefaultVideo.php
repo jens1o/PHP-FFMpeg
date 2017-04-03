@@ -58,6 +58,7 @@ abstract class DefaultVideo extends DefaultAudio implements VideoInterface
                 throw new \InvalidArgumentException('Invalid profile given! Must be one of `baseline`, `main` or `high`!');
         }
         $this->profile = $profile;
+        
         return $this;
     }
 
